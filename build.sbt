@@ -16,7 +16,7 @@ inThisBuild(
 
 val commonsettings = Seq(
   scalaVersion := "2.13.6",
-  crossScalaVersions := Seq("2.12.15", "2.13.6"),
+  crossScalaVersions := Seq("2.12.17", "2.13.6"),
   mimaPreviousArtifacts := Set(organization.value %% moduleName.value % "1.1.3")
 )
 
@@ -26,7 +26,7 @@ lazy val root = crossProject(JSPlatform, JVMPlatform)
   .settings(commonsettings: _*)
   .settings(
     name := "stringsplit",
-    libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.10" % "test"
+    libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.15" % "test"
   )
 
 lazy val sharedJVM = root.jvm
