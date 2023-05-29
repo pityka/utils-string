@@ -26,7 +26,7 @@ lazy val root = crossProject(JSPlatform, JVMPlatform)
   .settings(commonsettings: _*)
   .settings(
     name := "stringsplit",
-    libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.15" % "test"
+    libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.16" % "test"
   )
 
 lazy val sharedJVM = root.jvm
